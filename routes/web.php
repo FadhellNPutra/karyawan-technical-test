@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('master');
 });
+Route::get('/pegawai', function () {
+    return view('form.pegawai');
+});
+Route::get('/jabatan', function () {
+    return view('form.jabatan');
+});
+Route::get('/kontrak', function () {
+    return view('form.kontrak');
+});

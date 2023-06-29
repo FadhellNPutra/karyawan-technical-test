@@ -25,29 +25,12 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Blank Page</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
-            </ol>
-          </div>
-        </div>
-      </div><!-- /.container-fluid -->
-    </section>
 
     <!-- Main content -->
     <section class="content">
 
       <!-- Default box -->
-      <h1>Ini tempat konten</h1>
-      <h3>Buat seperti punya kak Rohi</h3>
+      @yield('form')
 
     </section>
     <!-- /.content -->
@@ -75,7 +58,5 @@
 <script src="{{asset('template/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('template/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset('template/dist/js/demo.js')}}"></script>
 </body>
 </html>
