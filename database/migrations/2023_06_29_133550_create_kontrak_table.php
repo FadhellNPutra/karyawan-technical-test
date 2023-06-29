@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->date('tanggal masuk');
             $table->date('tanggal keluar');
-            $table->foreignId('pegawai_id');
+            $table->unsignedBigInteger('pegawai_id');
+            $table->foreign('pegawai_id')->references('id')->on('pegawai');
             $table->timestamps();
         });
     }
