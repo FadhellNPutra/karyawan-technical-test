@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('kontrak', function (Blueprint $table) {
             $table->id();
-            $table->date('tanggal masuk');
-            $table->date('tanggal keluar');
+            $table->date('tanggal_masuk');
+            $table->date('tanggal_keluar');
             $table->unsignedBigInteger('pegawai_id');
             $table->foreign('pegawai_id')->references('id')->on('pegawai');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
